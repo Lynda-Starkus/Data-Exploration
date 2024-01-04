@@ -1,6 +1,6 @@
 import yaml
 import pandas as pd
-from requests import make_request
+import requests
 
 class VelibData:
 
@@ -29,6 +29,9 @@ class VelibData:
 
     def getStationsStatus(self):
         return self.stations_status
+    
+    def make_request(path: str):
+        return requests.get(path)
 
 
 if __name__ == "__main__":
