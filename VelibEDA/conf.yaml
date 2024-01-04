@@ -1,0 +1,3 @@
+api_url:
+  station_information : https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+  station_status : https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
