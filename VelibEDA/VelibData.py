@@ -4,7 +4,7 @@ import requests
 
 class VelibData:
 
-    def VelibData(self):
+    def __init__(self):
         self.station_info_url, self.station_status_url  = self.getStationUrl()
 
         # Requêtes API Velib
@@ -30,15 +30,15 @@ class VelibData:
     def getStationsStatus(self):
         return self.stations_status
     
-    def make_request(path: str):
-        return requests.get(path)
+def make_request(path: str):
+    return requests.get(path)
 
 
 if __name__ == "__main__":
     
     velibData = VelibData()
-    stationsInfo = VelibData.getStationsInfo()
-    stationsStatus = VelibData.getStationsStatus()
+    stationsInfo = velibData.getStationsInfo()
+    stationsStatus = velibData.getStationsStatus()
 
     print("Infos: \n", stationsInfo.head(10))
     print("Status: \n", stationsStatus.head(10))
