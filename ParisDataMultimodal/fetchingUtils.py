@@ -22,9 +22,10 @@ class GetDataFromAPI():
         https://opendata.paris.fr/explore/dataset/comptage-multimodal-comptages/
         '''
 
-        # getting first 5000 rows since its the limit set by API
-        url = 'https://opendata.paris.fr/api/records/1.0/search/?dataset=comptage-multimodal-comptages&q=t:[{}T00:00:00Z+TO+{}T23:59:59Z]&rows=10000&facet=label&facet=t&facet=mode&facet=voie&facet=sens&facet=trajectoire'.format(self.date,self.date)
+        #/api/records/1.0/search/?dataset=comptage-multimodal-comptages&q=t%3A%5B2021-10-10%20TO%202023-09-09%5D&rows=101
+        url = 'https://opendata.paris.fr/api/records/1.0/search/?dataset=comptage-multimodal-comptages&q=t%3A%5B{}}%20TO%20{}}%5D&rows=100'.format(self.date,self.date)
         response = requests.get(url)
+        print(response.status_code)
         data = json.loads(response.content)['records']
 
 
