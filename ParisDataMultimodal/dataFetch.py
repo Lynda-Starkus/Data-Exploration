@@ -11,52 +11,42 @@ warnings.filterwarnings('ignore')
 from fetchingUtils import GetDataFromAPI
 
 class DataBetweenDates:
-
-    def __init__(self, start_date, end_date, api_key) -> list:
-        self.start_date = start_date
-        self.end_date = end_date
+    def __init__(self, start_date, end_date, api_key):
+        self.start_date = pd.to_datetime(start_date)
+        self.end_date = pd.to_datetime(end_date)
         self.api_key = api_key
 
-
     def get_data_bw_two_dates(self):
+        current_date = self.start_date
+        all_data = pd.DataFrame()
 
+        while current_date <= self.end_date:
+            next_date = current_date + timedelta(days=100 - 1)  # Subtract 1 day to avoid overlapping dates
+            next_date = min(next_date, self.end_date)  # Make sure we don't go beyond the end_date
 
-        path = 'data/vehicle_count_hourly_{}_to_{}.parquet'.format(self.start_date, self.end_date)
-        path_csv = 'data/vehicle_count_hourly_{}_to_{}.csv'.format(self.start_date, self.end_date)
-
-        if not os.path.exists(path) and not os.path.exists(path_csv):
-
-
-            p_vehicle = GetDataFromAPI(start_date, end_date, api_key)
-
-
+            p_vehicle = GetDataFromAPI(current_date.strftime("%Y-%m-%d"), next_date.strftime("%Y-%m-%d"), self.api_key)
             data_vehicle_hourly = p_vehicle.get_data_from_open_data_paris()
-            print(data_vehicle_hourly)
 
-#            PATH = Path('data/')
+            all_data = pd.concat([all_data, data_vehicle_hourly], ignore_index=True)
 
+            # Move to the next date range
+            current_date = next_date + timedelta(days=1)
 
-            data_vehicle_hourly_path = PATH/'vehicle_count_hourly_{}_to_{}.parquet'.format(self.start_date, self.end_date)
-            data_vehicle_hourly.to_parquet(data_vehicle_hourly_path)
-
-            data_vehicle_hourly_path_csv = PATH/'vehicle_count_hourly_{}_to_{}.csv'.format(self.start_date, self.end_date)
-            data_vehicle_hourly.to_csv(data_vehicle_hourly_path_csv)
+        return all_data
 
 if __name__ == '__main__':
     PATH = Path('data/')
     print("creating directory structure...")
-    (PATH).mkdir(exist_ok=True)
-
-
-
+    PATH.mkdir(exist_ok=True)
 
     api_key = ''
-
-    #today_date = date.today()
-    #today_date = today_date.strftime("%Y-%m-%d")
-
-    start_date = '2023-05-17'
-    end_date =  '2023-06-10'
+    start_date = '2021-05-17'
+    end_date = '2023-06-10'
 
     p_data = DataBetweenDates(start_date, end_date, api_key)
     data = p_data.get_data_bw_two_dates()
+
+    # Now 'data' contains all the data between the specified start and end dates.
+    # You can save it to parquet or CSV as needed.
+    data.to_parquet(PATH / 'all_vehicle_data.parquet')
+    data.to_csv(PATH / 'all_vehicle_data.csv')
