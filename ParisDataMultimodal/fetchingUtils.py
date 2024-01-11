@@ -12,8 +12,9 @@ warnings.filterwarnings('ignore')
 
 class GetDataFromAPI():
 
-    def __init__(self, date, api_key):
-        self.date = date
+    def __init__(self, start_date, end_date, api_key):
+        self.start_date = start_date
+        self.end_date = end_date
         self.api_key = api_key
 
 
@@ -23,11 +24,12 @@ class GetDataFromAPI():
         '''
 
         #/api/records/1.0/search/?dataset=comptage-multimodal-comptages&q=t%3A%5B2021-10-10%20TO%202023-09-09%5D&rows=101
-        url = 'https://opendata.paris.fr/api/records/1.0/search/?dataset=comptage-multimodal-comptages&q=t%3A%5B{}}%20TO%20{}}%5D&rows=100'.format(self.date,self.date)
+        url = 'https://opendata.paris.fr/api/records/1.0/search/?dataset=comptage-multimodal-comptages&q=t%3A%5B{}%20TO%20{}%5D&rows=100'.format(self.start_date,self.end_date)
+        print(url)
         response = requests.get(url)
         print(response.status_code)
         data = json.loads(response.content)['records']
-
+        print(data)
 
         records = []
         for record in data:
@@ -42,11 +44,12 @@ if __name__ == '__main__':
     print("creating directory structure...")
     (PATH).mkdir(exist_ok=True)
 
-    date = '2023-05-17'
+    start_date = '2023-05-17'
+    end_date = '2023-06-10'
     api_key = ''
-    get_data_class = GetDataFromAPI(date, api_key)
+    get_data_class = GetDataFromAPI(start_date, end_date, api_key)
     data = get_data_class.get_data_from_open_data_paris()
 #    data['metric_and_value'] = data['metric_and_value'].astype(str)  ## error in saving to parquet version in the newer version so need to convert this column to str
 
-    data_path = PATH/'vehichle_count_hourly_{}.parquet'.format(date)
+    data_path = PATH/'vehichle_count_hourly_{}_to_{}.parquet'.format(start_date, end_date)
     data.to_parquet(data_path)

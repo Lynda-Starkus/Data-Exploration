@@ -49,15 +49,11 @@ if __name__ == '__main__':
 
     api_key = 'QRhUgmdXxbYTV8KMhgc2IYaKVUpVtJ9lqo2VKWvv'
 
-    today_date = date.today()
-    today_date = today_date.strftime("%Y-%m-%d")
+    #today_date = date.today()
+    #today_date = today_date.strftime("%Y-%m-%d")
 
     start_date = '2020-01-01'
     end_date =  '2023-05-01'
 
-
-    dates = pd.date_range( pd.to_datetime(start_date), pd.to_datetime( today_date )-timedelta(days=1), freq='d')
-    dates = dates.astype(str)
-
-    p_data = DataBetweenDates(dates, api_key)
+    p_data = DataBetweenDates(start_date, end_date, api_key)
     data = p_data.get_data_bw_two_dates()
