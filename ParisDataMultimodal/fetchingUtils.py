@@ -29,7 +29,7 @@ class GetDataFromAPI():
         response = requests.get(url)
         print(response.status_code)
         data = json.loads(response.content)['records']
-        print(data)
+        print()
 
         records = []
         for record in data:

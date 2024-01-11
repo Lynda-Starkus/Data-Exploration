@@ -12,32 +12,35 @@ from fetchingUtils import GetDataFromAPI
 
 class DataBetweenDates:
 
-    def __init__(self, dates, api_key) -> list:
-        self.dates = dates
+    def __init__(self, start_date, end_date, api_key) -> list:
+        self.start_date = start_date
+        self.end_date = end_date
         self.api_key = api_key
 
 
     def get_data_bw_two_dates(self):
 
 
+        path = '/data/vehicle_count_hourly_{}_to_{}.parquet'.format(self.start_date, self.end_date)
+        path_csv = '/data/vehicle_count_hourly_{}_to_{}.csv'.format(self.start_date, self.end_date)
 
-        for date in self.dates:
-
-            path = '/data/vehicle_count_hourly_{}.parquet'.format(date)
-            if not os.path.exists(path):
-
-
-                p_vehicle = GetDataFromAPI(date, api_key)
+        if not os.path.exists(path) and not os.path.exists(path_csv):
 
 
-                data_vehicle_hourly = p_vehicle.get_data_from_open_data_paris()
+            p_vehicle = GetDataFromAPI(start_date, end_date, api_key)
 
 
-    #            PATH = Path('data/')
+            data_vehicle_hourly = p_vehicle.get_data_from_open_data_paris()
 
 
-                data_vehicle_hourly_path = PATH/'vehicle_count_hourly_{}.parquet'.format(date)
-                data_vehicle_hourly.to_parquet(data_vehicle_hourly_path)
+#            PATH = Path('data/')
+
+
+            data_vehicle_hourly_path = PATH/'vehicle_count_hourly_{}_to_{}.parquet'.format(self.start_date, self.end_date)
+            data_vehicle_hourly.to_parquet(data_vehicle_hourly_path)
+
+            data_vehicle_hourly_path_csv = PATH/'vehicle_count_hourly_{}_to_{}.csv'.format(self.start_date, self.end_date)
+            data_vehicle_hourly.to_csv(data_vehicle_hourly_path_csv)
 
 if __name__ == '__main__':
     PATH = Path('/data/')
