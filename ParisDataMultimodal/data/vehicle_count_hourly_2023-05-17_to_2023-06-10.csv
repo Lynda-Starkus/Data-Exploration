@@ -1,0 +1,101 @@
+,id_site,t,sens,nb_usagers,label,trajectoire,voie,id_trajectoire,coordonnees_geo,mode
+0,10004,2023-05-17T23:00:00+00:00,O-E,1,[Paris] Rivoli x Nicolas Flamel,3 -> 2,Coronapiste,10004_3 -> 2,"[48.858273, 2.349109]",Vélos
+1,10004,2023-05-18T00:00:00+00:00,E-O,48,[Paris] Rivoli x Nicolas Flamel,4 -> 2,Coronapiste,10004_4 -> 2,"[48.858273, 2.349109]",Vélos
+2,10004,2023-05-18T00:00:00+00:00,E-O,13,[Paris] Rivoli x Nicolas Flamel,4 -> 2,Coronapiste,10004_4 -> 2,"[48.858273, 2.349109]",Trottinettes
+3,10004,2023-05-18T02:00:00+00:00,O-E,34,[Paris] Rivoli x Nicolas Flamel,1 -> 1,Piste cyclable,10004_1 -> 1,"[48.858273, 2.349109]",Vélos
+4,10004,2023-05-18T02:00:00+00:00,E-O,2,[Paris] Rivoli x Nicolas Flamel,2 -> 1,Piste cyclable,10004_2 -> 1,"[48.858273, 2.349109]",Trottinettes
+5,10004,2023-05-18T03:00:00+00:00,E-O,1,[Paris] Rivoli x Nicolas Flamel,4 -> 2,Coronapiste,10004_4 -> 2,"[48.858273, 2.349109]",2 roues motorisées
+6,10004,2023-05-18T05:00:00+00:00,E-O,7,[Paris] Rivoli x Nicolas Flamel,2 -> 1,Piste cyclable,10004_2 -> 1,"[48.858273, 2.349109]",Vélos
+7,10004,2023-05-18T06:00:00+00:00,O-E,70,[Paris] Rivoli x Nicolas Flamel,1 -> 1,Piste cyclable,10004_1 -> 1,"[48.858273, 2.349109]",Vélos
+8,10004,2023-05-18T06:00:00+00:00,E-O,11,[Paris] Rivoli x Nicolas Flamel,5 -> 3,Voie de circulation générale,10004_5 -> 3,"[48.858273, 2.349109]",2 roues motorisées
+9,10004,2023-05-18T07:00:00+00:00,E-O,1,[Paris] Rivoli x Nicolas Flamel,5 -> 3,Voie de circulation générale,10004_5 -> 3,"[48.858273, 2.349109]",Trottinettes
+10,10004,2023-05-18T11:00:00+00:00,O-E,28,[Paris] Rivoli x Nicolas Flamel,1 -> 1,Piste cyclable,10004_1 -> 1,"[48.858273, 2.349109]",Trottinettes
+11,10004,2023-05-18T11:00:00+00:00,E-O,1,[Paris] Rivoli x Nicolas Flamel,5 -> 2,Coronapiste,10004_5 -> 2,"[48.858273, 2.349109]",Trottinettes
+12,10004,2023-05-18T12:00:00+00:00,E-O,5,[Paris] Rivoli x Nicolas Flamel,4 -> 3,Voie de circulation générale,10004_4 -> 3,"[48.858273, 2.349109]",Vélos
+13,10004,2023-05-18T12:00:00+00:00,O-E,51,[Paris] Rivoli x Nicolas Flamel,1 -> 1,Piste cyclable,10004_1 -> 1,"[48.858273, 2.349109]",Trottinettes
+14,10004,2023-05-18T15:00:00+00:00,E-O,5,[Paris] Rivoli x Nicolas Flamel,4 -> 2,Coronapiste,10004_4 -> 2,"[48.858273, 2.349109]","Véhicules légers < 3,5t"
+15,10004,2023-05-18T17:00:00+00:00,E-O,1,[Paris] Rivoli x Nicolas Flamel,5 -> 2,Coronapiste,10004_5 -> 2,"[48.858273, 2.349109]",2 roues motorisées
+16,10004,2023-05-18T20:00:00+00:00,O-E,1,[Paris] Rivoli x Nicolas Flamel,3 -> 2,Coronapiste,10004_3 -> 2,"[48.858273, 2.349109]",Vélos
+17,10004,2023-05-18T20:00:00+00:00,E-O,6,[Paris] Rivoli x Nicolas Flamel,5 -> 3,Voie de circulation générale,10004_5 -> 3,"[48.858273, 2.349109]",Autobus et autocars
+18,10004,2023-05-18T20:00:00+00:00,E-O,8,[Paris] Rivoli x Nicolas Flamel,2 -> 1,Piste cyclable,10004_2 -> 1,"[48.858273, 2.349109]",Trottinettes
+19,10015,2023-05-17T22:00:00+00:00,N-S,1,[Paris] Amsterdam x Clichy,1 -> 1,Voie de circulation générale,10015_1 -> 1,"[48.883513, 2.327263]","Véhicules lourds > 3,5t"
+20,10015,2023-05-17T23:00:00+00:00,S-N,38,[Paris] Amsterdam x Clichy,2 -> 2,Coronapiste,10015_2 -> 2,"[48.883513, 2.327263]",Trottinettes + vélos
+21,10015,2023-05-18T00:00:00+00:00,N-S,30,[Paris] Amsterdam x Clichy,1 -> 1,Voie de circulation générale,10015_1 -> 1,"[48.883513, 2.327263]",Trottinettes + vélos
+22,10015,2023-05-18T01:00:00+00:00,N-S,13,[Paris] Amsterdam x Clichy,1 -> 1,Voie de circulation générale,10015_1 -> 1,"[48.883513, 2.327263]",Trottinettes + vélos
+23,10015,2023-05-18T05:00:00+00:00,N-S,64,[Paris] Amsterdam x Clichy,1 -> 1,Voie de circulation générale,10015_1 -> 1,"[48.883513, 2.327263]",Trottinettes + vélos
+24,10015,2023-05-18T09:00:00+00:00,S-N,42,[Paris] Amsterdam x Clichy,2 -> 2,Coronapiste,10015_2 -> 2,"[48.883513, 2.327263]",Trottinettes + vélos
+25,10029,2023-05-20T01:00:00+00:00,E-O,45,[Paris] CF4 Poissonnière x Montmartre OUEST,1 -> 1,Voie de circulation générale,10029_1 -> 1,"[48.8714843, 2.341831]",2 roues motorisées
+26,10029,2023-05-20T02:00:00+00:00,E-O,13,[Paris] CF4 Poissonnière x Montmartre OUEST,3 -> 1,Piste cyclable,10029_3 -> 1,"[48.8714843, 2.341831]",Vélos
+27,10029,2023-05-20T02:00:00+00:00,E-O,428,[Paris] CF4 Poissonnière x Montmartre OUEST,1 -> 1,Voie de circulation générale,10029_1 -> 1,"[48.8714843, 2.341831]","Véhicules légers < 3,5t"
+28,10029,2023-05-20T03:00:00+00:00,E-O,428,[Paris] CF4 Poissonnière x Montmartre OUEST,1 -> 1,Voie de circulation générale,10029_1 -> 1,"[48.8714843, 2.341831]","Véhicules légers < 3,5t"
+29,10029,2023-05-20T04:00:00+00:00,E-O,1,[Paris] CF4 Poissonnière x Montmartre OUEST,3 -> 1,Piste cyclable,10029_3 -> 1,"[48.8714843, 2.341831]",Trottinettes
+30,10029,2023-05-20T05:00:00+00:00,E-O,6,[Paris] CF4 Poissonnière x Montmartre OUEST,3 -> 1,Piste cyclable,10029_3 -> 1,"[48.8714843, 2.341831]",Vélos
+31,10029,2023-05-20T06:00:00+00:00,E-O,9,[Paris] CF4 Poissonnière x Montmartre OUEST,3 -> 1,Piste cyclable,10029_3 -> 1,"[48.8714843, 2.341831]","Véhicules légers < 3,5t"
+32,10029,2023-05-20T08:00:00+00:00,E-O,26,[Paris] CF4 Poissonnière x Montmartre OUEST,1 -> 1,Voie de circulation générale,10029_1 -> 1,"[48.8714843, 2.341831]",Vélos
+33,10029,2023-05-20T09:00:00+00:00,E-O,22,[Paris] CF4 Poissonnière x Montmartre OUEST,1 -> 1,Voie de circulation générale,10029_1 -> 1,"[48.8714843, 2.341831]",Vélos
+34,10029,2023-05-20T14:00:00+00:00,E-O,79,[Paris] CF4 Poissonnière x Montmartre OUEST,3 -> 1,Piste cyclable,10029_3 -> 1,"[48.8714843, 2.341831]",Vélos
+35,10029,2023-05-20T14:00:00+00:00,E-O,7,[Paris] CF4 Poissonnière x Montmartre OUEST,1 -> 1,Voie de circulation générale,10029_1 -> 1,"[48.8714843, 2.341831]",Autobus et autocars
+36,10029,2023-05-20T15:00:00+00:00,E-O,22,[Paris] CF4 Poissonnière x Montmartre OUEST,3 -> 1,Piste cyclable,10029_3 -> 1,"[48.8714843, 2.341831]","Véhicules légers < 3,5t"
+37,10029,2023-05-20T15:00:00+00:00,E-O,3,[Paris] CF4 Poissonnière x Montmartre OUEST,3 -> 1,Piste cyclable,10029_3 -> 1,"[48.8714843, 2.341831]",2 roues motorisées
+38,10029,2023-05-20T16:00:00+00:00,E-O,55,[Paris] CF4 Poissonnière x Montmartre OUEST,3 -> 1,Piste cyclable,10029_3 -> 1,"[48.8714843, 2.341831]",Vélos
+39,10029,2023-05-20T19:00:00+00:00,E-O,11,[Paris] CF4 Poissonnière x Montmartre OUEST,3 -> 1,Piste cyclable,10029_3 -> 1,"[48.8714843, 2.341831]",Trottinettes
+40,10029,2023-05-20T20:00:00+00:00,E-O,4,[Paris] CF4 Poissonnière x Montmartre OUEST,1 -> 1,Voie de circulation générale,10029_1 -> 1,"[48.8714843, 2.341831]",Vélos
+41,10029,2023-05-20T20:00:00+00:00,E-O,3,[Paris] CF4 Poissonnière x Montmartre OUEST,3 -> 1,Piste cyclable,10029_3 -> 1,"[48.8714843, 2.341831]",2 roues motorisées
+42,10029,2023-05-20T20:00:00+00:00,E-O,1,[Paris] CF4 Poissonnière x Montmartre OUEST,1 -> 1,Voie de circulation générale,10029_1 -> 1,"[48.8714843, 2.341831]","Véhicules lourds > 3,5t"
+43,10030,2023-05-20T00:00:00+00:00,S-N,1,[Paris] CF1 Rivoli x Sébastopol,1 -> 1,Voie de circulation générale,10030_1 -> 1,"[48.858628, 2.348208]","Véhicules lourds > 3,5t"
+44,10030,2023-05-20T04:00:00+00:00,S-N,30,[Paris] CF1 Rivoli x Sébastopol,2 -> 1,Voie de circulation générale,10030_2 -> 1,"[48.858628, 2.348208]","Véhicules lourds > 3,5t"
+45,10030,2023-05-20T06:00:00+00:00,S-N,40,[Paris] CF1 Rivoli x Sébastopol,2 -> 1,Voie de circulation générale,10030_2 -> 1,"[48.858628, 2.348208]","Véhicules lourds > 3,5t"
+46,10030,2023-05-20T07:00:00+00:00,N-S,173,[Paris] CF1 Rivoli x Sébastopol,4 -> 2,Piste cyclable,10030_4 -> 2,"[48.858628, 2.348208]",Vélos
+47,10030,2023-05-20T08:00:00+00:00,,1,,2 -> 2,,10030_2 -> 2,,Trottinettes
+48,10030,2023-05-20T13:00:00+00:00,S-N,37,[Paris] CF1 Rivoli x Sébastopol,2 -> 1,Voie de circulation générale,10030_2 -> 1,"[48.858628, 2.348208]",Vélos
+49,10030,2023-05-20T14:00:00+00:00,S-N,39,[Paris] CF1 Rivoli x Sébastopol,3 -> 2,Piste cyclable,10030_3 -> 2,"[48.858628, 2.348208]",Trottinettes
+50,10030,2023-05-20T18:00:00+00:00,S-N,104,[Paris] CF1 Rivoli x Sébastopol,1 -> 1,Voie de circulation générale,10030_1 -> 1,"[48.858628, 2.348208]",2 roues motorisées
+51,10030,2023-05-20T18:00:00+00:00,S-N,99,[Paris] CF1 Rivoli x Sébastopol,2 -> 1,Voie de circulation générale,10030_2 -> 1,"[48.858628, 2.348208]",2 roues motorisées
+52,10030,2023-05-20T18:00:00+00:00,S-N,1,[Paris] CF1 Rivoli x Sébastopol,2 -> 1,Voie de circulation générale,10030_2 -> 1,"[48.858628, 2.348208]",Trottinettes
+53,10030,2023-05-20T18:00:00+00:00,S-N,6,[Paris] CF1 Rivoli x Sébastopol,2 -> 1,Voie de circulation générale,10030_2 -> 1,"[48.858628, 2.348208]","Véhicules lourds > 3,5t"
+54,10030,2023-05-20T19:00:00+00:00,S-N,15,[Paris] CF1 Rivoli x Sébastopol,2 -> 1,Voie de circulation générale,10030_2 -> 1,"[48.858628, 2.348208]",Vélos
+55,10030,2023-05-20T20:00:00+00:00,S-N,35,[Paris] CF1 Rivoli x Sébastopol,1 -> 1,Voie de circulation générale,10030_1 -> 1,"[48.858628, 2.348208]",Vélos
+56,10081,2023-05-19T23:00:00+00:00,,13,,1 -> 1,,10081_1 -> 1,,Autobus et autocars
+57,10081,2023-05-20T00:00:00+00:00,,5,,2 -> 2,,10081_2 -> 2,,Trottinettes
+58,10081,2023-05-20T01:00:00+00:00,,179,,1 -> 1,,10081_1 -> 1,,"Véhicules légers < 3,5t"
+59,10081,2023-05-20T04:00:00+00:00,,3,,1 -> 1,,10081_1 -> 1,,Trottinettes
+60,10081,2023-05-20T05:00:00+00:00,,3,,1 -> 1,,10081_1 -> 1,,Autobus et autocars
+61,10081,2023-05-20T05:00:00+00:00,,1,,1 -> 1,,10081_1 -> 1,,Trottinettes
+62,10081,2023-05-20T06:00:00+00:00,,274,,2 -> 2,,10081_2 -> 2,,"Véhicules légers < 3,5t"
+63,10081,2023-05-20T06:00:00+00:00,,24,,2 -> 2,,10081_2 -> 2,,"Véhicules lourds > 3,5t"
+64,10081,2023-05-20T08:00:00+00:00,,19,,1 -> 1,,10081_1 -> 1,,2 roues motorisées
+65,10081,2023-05-20T08:00:00+00:00,,26,,1 -> 1,,10081_1 -> 1,,"Véhicules lourds > 3,5t"
+66,10081,2023-05-20T08:00:00+00:00,,11,,2 -> 2,,10081_2 -> 2,,"Véhicules lourds > 3,5t"
+67,10081,2023-05-20T09:00:00+00:00,,112,,2 -> 2,,10081_2 -> 2,,Trottinettes + vélos
+68,10081,2023-05-20T10:00:00+00:00,,13,,2 -> 2,,10081_2 -> 2,,"Véhicules lourds > 3,5t"
+69,10081,2023-05-20T12:00:00+00:00,,22,,2 -> 2,,10081_2 -> 2,,Trottinettes
+70,10081,2023-05-20T15:00:00+00:00,,397,,1 -> 1,,10081_1 -> 1,,"Véhicules légers < 3,5t"
+71,10081,2023-05-20T16:00:00+00:00,,78,,2 -> 2,,10081_2 -> 2,,2 roues motorisées
+72,10081,2023-05-20T17:00:00+00:00,,18,,1 -> 1,,10081_1 -> 1,,Trottinettes
+73,10081,2023-05-20T18:00:00+00:00,,6,,1 -> 1,,10081_1 -> 1,,Autobus et autocars
+74,10081,2023-05-20T18:00:00+00:00,,4,,2 -> 2,,10081_2 -> 2,,Autobus et autocars
+75,10081,2023-05-20T18:00:00+00:00,,67,,2 -> 2,,10081_2 -> 2,,2 roues motorisées
+76,10081,2023-05-20T19:00:00+00:00,,2,,2 -> 2,,10081_2 -> 2,,"Véhicules lourds > 3,5t"
+77,10081,2023-05-20T21:00:00+00:00,,67,,1 -> 1,,10081_1 -> 1,,2 roues motorisées
+78,10081,2023-05-20T21:00:00+00:00,,17,,1 -> 1,,10081_1 -> 1,,Trottinettes
+79,10086,2023-05-19T22:00:00+00:00,,7,,4 -> 3,,10086_4 -> 3,,Autobus et autocars
+80,10086,2023-05-20T04:00:00+00:00,,24,,3 -> 2,,10086_3 -> 2,,"Véhicules lourds > 3,5t"
+81,10086,2023-05-20T05:00:00+00:00,,25,,3 -> 2,,10086_3 -> 2,,"Véhicules lourds > 3,5t"
+82,10086,2023-05-20T06:00:00+00:00,,45,,1 -> 1,,10086_1 -> 1,,Trottinettes + vélos
+83,10086,2023-05-20T09:00:00+00:00,,25,,4 -> 3,,10086_4 -> 3,,2 roues motorisées
+84,10086,2023-05-20T09:00:00+00:00,,3,,1 -> 1,,10086_1 -> 1,,Trottinettes
+85,10086,2023-05-20T11:00:00+00:00,,19,,3 -> 2,,10086_3 -> 2,,Trottinettes + vélos
+86,10086,2023-05-20T12:00:00+00:00,,1,,2 -> 1,,10086_2 -> 1,,Trottinettes + vélos
+87,10086,2023-05-20T14:00:00+00:00,,11,,3 -> 2,,10086_3 -> 2,,Trottinettes + vélos
+88,10086,2023-05-20T14:00:00+00:00,,528,,3 -> 2,,10086_3 -> 2,,"Véhicules légers < 3,5t"
+89,10086,2023-05-20T16:00:00+00:00,,127,,1 -> 1,,10086_1 -> 1,,Trottinettes + vélos
+90,10086,2023-05-20T21:00:00+00:00,,4,,1 -> 1,,10086_1 -> 1,,Trottinettes
+91,10004,2023-05-20T22:00:00+00:00,E-O,9,[Paris] Rivoli x Nicolas Flamel,2 -> 1,Piste cyclable,10004_2 -> 1,"[48.858273, 2.349109]",Trottinettes
+92,10004,2023-05-20T23:00:00+00:00,E-O,6,[Paris] Rivoli x Nicolas Flamel,2 -> 1,Piste cyclable,10004_2 -> 1,"[48.858273, 2.349109]",Vélos
+93,10004,2023-05-21T06:00:00+00:00,E-O,3,[Paris] Rivoli x Nicolas Flamel,5 -> 3,Voie de circulation générale,10004_5 -> 3,"[48.858273, 2.349109]",Vélos
+94,10004,2023-05-21T11:00:00+00:00,E-O,273,[Paris] Rivoli x Nicolas Flamel,4 -> 2,Coronapiste,10004_4 -> 2,"[48.858273, 2.349109]",Vélos
+95,10004,2023-05-21T14:00:00+00:00,E-O,1,[Paris] Rivoli x Nicolas Flamel,4 -> 2,Coronapiste,10004_4 -> 2,"[48.858273, 2.349109]","Véhicules lourds > 3,5t"
+96,10004,2023-05-21T15:00:00+00:00,E-O,1,[Paris] Rivoli x Nicolas Flamel,4 -> 3,Voie de circulation générale,10004_4 -> 3,"[48.858273, 2.349109]",Vélos
+97,10004,2023-05-21T15:00:00+00:00,E-O,215,[Paris] Rivoli x Nicolas Flamel,5 -> 3,Voie de circulation générale,10004_5 -> 3,"[48.858273, 2.349109]","Véhicules légers < 3,5t"
+98,10004,2023-05-21T17:00:00+00:00,O-E,457,[Paris] Rivoli x Nicolas Flamel,1 -> 1,Piste cyclable,10004_1 -> 1,"[48.858273, 2.349109]",Vélos
+99,10004,2023-05-21T19:00:00+00:00,E-O,19,[Paris] Rivoli x Nicolas Flamel,2 -> 1,Piste cyclable,10004_2 -> 1,"[48.858273, 2.349109]",Vélos

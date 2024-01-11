@@ -21,8 +21,8 @@ class DataBetweenDates:
     def get_data_bw_two_dates(self):
 
 
-        path = '/data/vehicle_count_hourly_{}_to_{}.parquet'.format(self.start_date, self.end_date)
-        path_csv = '/data/vehicle_count_hourly_{}_to_{}.csv'.format(self.start_date, self.end_date)
+        path = 'data/vehicle_count_hourly_{}_to_{}.parquet'.format(self.start_date, self.end_date)
+        path_csv = 'data/vehicle_count_hourly_{}_to_{}.csv'.format(self.start_date, self.end_date)
 
         if not os.path.exists(path) and not os.path.exists(path_csv):
 
@@ -31,7 +31,7 @@ class DataBetweenDates:
 
 
             data_vehicle_hourly = p_vehicle.get_data_from_open_data_paris()
-
+            print(data_vehicle_hourly)
 
 #            PATH = Path('data/')
 
@@ -43,20 +43,20 @@ class DataBetweenDates:
             data_vehicle_hourly.to_csv(data_vehicle_hourly_path_csv)
 
 if __name__ == '__main__':
-    PATH = Path('/data/')
+    PATH = Path('data/')
     print("creating directory structure...")
     (PATH).mkdir(exist_ok=True)
 
 
 
 
-    api_key = 'QRhUgmdXxbYTV8KMhgc2IYaKVUpVtJ9lqo2VKWvv'
+    api_key = ''
 
     #today_date = date.today()
     #today_date = today_date.strftime("%Y-%m-%d")
 
-    start_date = '2020-01-01'
-    end_date =  '2023-05-01'
+    start_date = '2023-05-17'
+    end_date =  '2023-06-10'
 
     p_data = DataBetweenDates(start_date, end_date, api_key)
     data = p_data.get_data_bw_two_dates()

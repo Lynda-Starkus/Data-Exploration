@@ -36,6 +36,7 @@ class GetDataFromAPI():
             records.append(record['fields'])
 
         df = pd.DataFrame(records)
+        
         return df
     
 
