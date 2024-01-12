@@ -40,8 +40,8 @@ if __name__ == '__main__':
     PATH.mkdir(exist_ok=True)
 
     api_key = ''
-    start_date = '2021-05-17'
-    end_date = '2023-06-10'
+    start_date = '2020-01-11'
+    end_date = '2024-01-11'
 
     p_data = DataBetweenDates(start_date, end_date, api_key)
     data = p_data.get_data_bw_two_dates()

@@ -8,11 +8,10 @@ from datetime import date, timedelta
 from pathlib import Path
 import warnings
 warnings.filterwarnings('ignore')
-from google.cloud import bigquery
 
 
 ## junctions in the city of paris
-junction_labels = ['[Paris] Rivoli x Nicolas Flamel',
+junction_labels = [ '[Paris] Rivoli x Nicolas Flamel',
                     '[Paris] Amsterdam x Clichy',
                     '[Paris] Quai de Valmy',
                     '[Paris] Quai de Jemmapes',
@@ -48,8 +47,8 @@ def get_preprocessed_data():
 #        df_junction = df_junction.groupby(['label','latitude','longitude','t','mode'])['nb_usagers'].sum().reset_index()
 #        df_junction = df_junction.groupby(['label','latitude','longitude','t'])[['mode','nb_usagers']].agg(list).reset_index()
 
-        df_junction = df_junction.groupby(['label','latitude','longitude','t'])['nb_usagers'].sum().reset_index()
-#        df_junction = df_junction.groupby(['label','latitude','longitude','t'])[['mode','nb_usagers']].agg(list).reset_index()
+#        df_junction = df_junction.groupby(['label','latitude','longitude','t'])['nb_usagers'].sum().reset_index()
+        df_junction = df_junction.groupby(['label','latitude','longitude','t'])[['mode','nb_usagers']].agg(list).reset_index()
 
 
 #        df_junction['mode_&_nb_usagers'] = [list(x) for x in map(zip, df_junction['mode'], df_junction['nb_usagers'])]
